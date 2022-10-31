@@ -284,6 +284,11 @@ ul {
 body {
   font-family: "Roboto", Arial, sans-serif;
 }
+@media screen and (min-width: 480px) {
+  body {
+    font-family: "Roboto", Arial, sans-serif;
+  }
+}
 
 .list {
   list-style: none;

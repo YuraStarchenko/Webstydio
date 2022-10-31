@@ -21,6 +21,10 @@ ul {
 
 body {
    font-family: $main-font;
+
+   @media screen and (min-width: 480px) {
+      font-family: $main-font;
+   }
 }
 
 .list {
