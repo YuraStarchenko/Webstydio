@@ -1,0 +1,45 @@
+.about {
+   padding: 94px 0 94px 0;
+}
+
+.about__list {
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+}
+
+.about__item {
+   flex-basis: calc((100% - 90px) / 4);
+}
+
+.about__icon {
+   display: flex;
+   height: 120px;
+   border-radius: 4px;
+   align-items: center;
+   justify-content: center;
+   background-color: #f5f4fa;
+   margin-bottom: 30px;
+
+   &:first-child {
+      margin-left: 0;
+   }
+}
+
+.about__title {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: $leading-lh;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #212121;
+   margin-bottom: 10px;
+}
+
+.about__text {
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: $title-text-color;
+}

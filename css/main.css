@@ -294,14 +294,6 @@ body {
   font-style: normal;
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .flex__block {
   display: flex;
   align-items: baseline;
@@ -431,7 +423,6 @@ body {
   background-color: #2196f3;
 }
 
-/* ========== HERO ========== */
 .hero {
   background-color: #2f303a;
   text-align: center;
@@ -483,7 +474,6 @@ body {
   color: #ffffff;
 }
 
-/* ========== ABOUT ========== */
 .about {
   padding: 94px 0 94px 0;
 }
@@ -529,7 +519,6 @@ body {
   color: #757575;
 }
 
-/* ========== SCILLS WORK ========== */
 .skills {
   padding-bottom: 94px;
 }
@@ -572,7 +561,6 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* ========== TEAM ========== */
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -650,7 +638,6 @@ body {
   fill: #ffffff;
 }
 
-/* ========== REGULAR-CLIENTS ========== */
 .clients {
   padding: 94px 0 94px 0;
 }
@@ -695,8 +682,6 @@ body {
   fill: #2196f3;
 }
 
-/* ==================== PRODUCTS ==================== */
-/* ========== PRODUCTS BUTTONS ========== */
 .section__button-filter {
   margin-bottom: 50px;
 }
@@ -741,7 +726,6 @@ body {
   color: #ffffff;
 }
 
-/* ========== PRODUCTS SECTION ========== */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
