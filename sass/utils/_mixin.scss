@@ -15,3 +15,7 @@
       @content;
    }
 }
+
+//@mixin calc($count) {
+//   width: calc((100% - 30px * ($count - 1)) / $count);
+//}
