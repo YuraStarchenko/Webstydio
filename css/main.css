@@ -304,6 +304,13 @@ body {
   position: relative;
 }
 
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .header__logo-text {
   display: inline-block;
   font-family: "Raleway", sans-serif;
