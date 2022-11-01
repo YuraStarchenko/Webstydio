@@ -492,12 +492,13 @@ body {
 
 .about__list {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .about__item {
-  flex-basis: calc((100% - 30px) / 1);
+  width: calc((100% - 30px) / 2);
+  width: 100%;
 }
 
 .about__icon {
