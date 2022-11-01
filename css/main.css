@@ -310,6 +310,11 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 
 .header__logo-text {
   display: inline-block;
@@ -482,17 +487,17 @@ body {
 }
 
 .about {
-  padding: 94px 0 94px 0;
+  padding: 60px 0 60px 0;
 }
 
 .about__list {
   display: flex;
   gap: 30px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about__item {
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 30px) / 1);
 }
 
 .about__icon {
@@ -503,9 +508,6 @@ body {
   justify-content: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-}
-.about__icon:first-child {
-  margin-left: 0;
 }
 
 .about__title {
@@ -524,6 +526,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 30px;
 }
 
 .skills {

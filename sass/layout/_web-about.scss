@@ -1,15 +1,15 @@
 .about {
-   padding: 94px 0 94px 0;
+   padding: 60px 0 60px 0;
 }
 
 .about__list {
    display: flex;
    gap: 30px;
-   justify-content: center;
+   flex-wrap: wrap;
 }
 
 .about__item {
-   flex-basis: calc((100% - 90px) / 4);
+   flex-basis: calc((100% - 30px) / 1);
 }
 
 .about__icon {
@@ -21,9 +21,9 @@
    background-color: #f5f4fa;
    margin-bottom: 30px;
 
-   &:first-child {
-      margin-left: 0;
-   }
+   //&:first-child {
+   //   margin-left: 0;
+   //}
 }
 
 .about__title {
@@ -42,4 +42,5 @@
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: $title-text-color;
+   margin-bottom: 30px;
 }
