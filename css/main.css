@@ -315,6 +315,16 @@ body {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header__logo-text {
   display: inline-block;
@@ -497,8 +507,18 @@ body {
 }
 
 .about__item {
-  width: calc((100% - 30px) / 2);
   width: 100%;
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .about__icon {
