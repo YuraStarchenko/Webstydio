@@ -10,14 +10,12 @@
 
 .about__item {
    width: 100%;
-   width: calc((100% - 30px) / 2);
-   
-   @include tablet {
-      width: calc((100% - 60px) / 2);
-   }
-   @include tablet {
-      width: calc((100% - 90px) / 4);
-   }
+      @include tablet {
+         width: calc((100% - 30px) / 2);
+      }
+      @include desktop {
+         width: calc((100% - 90px) / 4);
+      }
 }
 
 .about__icon {
