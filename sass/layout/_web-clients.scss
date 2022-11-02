@@ -1,12 +1,11 @@
 .clients {
-   padding: 94px 0 94px 0;
+   padding: 60px 0 60px 0;
 }
 
 .clients__list {
    display: flex;
+   flex-wrap: wrap;
    gap: 30px;
-   justify-content: center;
-   align-items: center;
 }
 
 .clients__title {
@@ -19,15 +18,25 @@
    margin-bottom: 50px;
 }
 
-.clients__list-item {
+.clients__item {
    background-color: $main-color;
+      @include mobile {
+            width: calc((100% - 30px) / 2);
+         }
+
+         @include tablet {
+            width: calc((100% - 60px) / 3);
+         }
+      
+         @include desktop {
+            width: calc((100% - 150px) / 6);
+         }
 }
 
 .clients__link {
    border: 1px solid #afb1b8;
    display: flex;
    border-radius: 4px;
-   width: 170px;
    height: 92px;
    background-color: $main-color;
    justify-content: center;
@@ -42,4 +51,15 @@
       border-color: $accent-text-color;
       fill: $accent-text-color;
    }
+
+      @include mobile {
+         width: 210px;
+      }
+         
+      @include tablet {
+         width: 226px;
+      }
+      @include desktop {
+         width: 170px;
+      }
 }
