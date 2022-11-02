@@ -20,9 +20,12 @@
 
 .clients__item {
    background-color: $main-color;
-      @include mobile {
-            width: calc((100% - 30px) / 2);
-         }
+         @include min-mobile {
+               width: calc((100% - 30px) / 2);
+            }
+         @include mobile {
+               width: calc((100% - 30px) / 2);
+            }
 
          @include tablet {
             width: calc((100% - 60px) / 3);
@@ -51,7 +54,6 @@
       border-color: $accent-text-color;
       fill: $accent-text-color;
    }
-
       @include mobile {
          width: 210px;
       }

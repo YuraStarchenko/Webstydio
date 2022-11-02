@@ -702,6 +702,11 @@ body {
 .clients__item {
   background-color: #ffffff;
 }
+@media screen and (min-width: 320px) {
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__item {
     width: calc((100% - 30px) / 2);
