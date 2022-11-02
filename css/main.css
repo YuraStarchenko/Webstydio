@@ -499,6 +499,11 @@ body {
 .about {
   padding: 60px 0 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 94px 0 94px 0;
+  }
+}
 
 .about__list {
   display: flex;
@@ -593,8 +598,12 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0 94px 0;
+  }
 }
 
 .team__list {
@@ -681,6 +690,11 @@ body {
 
 .clients {
   padding: 60px 0 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0 94px 0;
+  }
 }
 
 .clients__list {
