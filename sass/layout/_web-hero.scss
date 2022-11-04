@@ -8,52 +8,50 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   height: 400px;
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../image/background-img.jpg");
-
-   @include desktop {
-         padding: 200px 0;
-         height: 600px;
-         height: 400px;
-      }
+      url("../image/hero-mob-bg.jpg");
 
    @include tablet {
-      padding: 118px 204px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../image/hero-tab-bg.jpg");
+            height: 400px;
    }
-   @include mobile {
-      padding: 118px 60px;
-         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-               url("../image/background-img.jpg");
-   }
-   @include min-mobile {
-      padding: 118px 60px;
+
+   @include desktop {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url("../image/background-img.jpg");
+      height: 600px;
    }
 }
 
 .hero__title {
    font-family: 'Roboto';
    font-weight: 900;
-   //font-size: 44px;
-   //line-height: 1.36;
-   font-size: 26px;
+   font-size: 16px;
+   width: 160px;
    line-height: 1.62;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   //width: 696px;
-   width: 360px;
    color: $main-color;
    margin: auto;
    margin-bottom: 30px;
 
-   @include desktop {}
-      @include tablet {}
-      @include mobile {}
-      @include min-mobile {}
+   @include mobile {
+         width: 360px;
+         font-size: 26px;
+      }
+
+   @include desktop {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+   }
 }
 
 .hero__btn {
    font-weight: 700;
-   font-size: 16px;
+   font-size: 13px;
    line-height: 1.88;
    letter-spacing: 0.06em;
    color: $main-color;
@@ -61,12 +59,9 @@
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border: 0;
    border-radius: 4px;
-   //width: 216px;
-   //height: 50px;
-   width: 200px;
-   height: 50px;
    cursor: pointer;
-   //display: inline-block;
+   width: 180px;
+   height: 40px;
    margin: 0 auto;
    transition-property: background-color, fill;
    transition-duration: 250ms;
@@ -76,5 +71,15 @@
    &:focus {
       background-color: $accent-active;
       color: #ffffff;
+   }
+   @include mobile {
+      font-size: 16px;
+      width: 200px;
+      height: 50px;
+   }
+
+   @include desktop {
+      font-size: 16px;
+      width: 216px;
    }
 }
