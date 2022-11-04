@@ -310,6 +310,11 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -446,6 +451,7 @@ body {
 }
 
 .hero {
+  display: flex;
   background-color: #2f303a;
   text-align: center;
   margin-left: auto;
@@ -465,6 +471,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 360px;
   color: #ffffff;
   margin: auto;
   margin-bottom: 30px;
@@ -483,7 +490,6 @@ body {
   width: 200px;
   height: 50px;
   cursor: pointer;
-  display: inline-block;
   margin: 0 auto;
   transition-property: background-color, fill;
   transition-duration: 250ms;
