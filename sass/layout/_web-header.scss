@@ -1,5 +1,5 @@
 .header__list {
-   display: flex;
+   //display: flex;
 }
 
 .header__list.list:first-child {
@@ -20,17 +20,17 @@
 }
 
 .header>.container {
-   display: flex;
+   //display: flex;
    align-items: center;
 }
 
 .header__menu-nav {
-   display: flex;
+   //display: flex;
    align-items: center;
 }
 
 .header__logo-text {
-   display: inline-block;
+   //display: inline-block;
    font-family: "Raleway", sans-serif;
    font-size: 26px;
    line-height: 1.19;
@@ -44,7 +44,7 @@
 }
 
 .header__contact-list {
-   display: flex;
+   //display: flex;
 }
 
 .header__link {
@@ -68,7 +68,7 @@
 }
 
 .header__contact-link {
-   display: flex;
+   //display: flex;
    text-decoration: none;
    align-items: center;
    gap: 10px;

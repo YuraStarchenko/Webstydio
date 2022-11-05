@@ -12,17 +12,23 @@
    background-image: $bg-gradient,
       url("../image/hero-mob-bg.jpg");
 
-      @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-            background-image: $bg-gradient,
-                  url("/image/");
-         }
+   @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         background-image: $bg-gradient,
+               url("../image/hero-mobile-bg-x2.jpg");
+      }
 
    @include tablet {
       background-image: $bg-gradient,
             url("../image/hero-tab-bg.jpg");
             height: 400px;
+   @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         background-image: $bg-gradient,
+            url("../image/hero-tab-bg-x2.jpg");
+      }
    }
 
    @include desktop {
