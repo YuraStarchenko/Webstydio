@@ -9,17 +9,24 @@
    background-position: center;
    background-size: cover;
    height: 400px;
-   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   background-image: $bg-gradient,
       url("../image/hero-mob-bg.jpg");
 
+      @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+            background-image: $bg-gradient,
+                  url("/image/");
+         }
+
    @include tablet {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      background-image: $bg-gradient,
             url("../image/hero-tab-bg.jpg");
             height: 400px;
    }
 
    @include desktop {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      background-image: $bg-gradient,
          url("../image/background-img.jpg");
       height: 600px;
    }
