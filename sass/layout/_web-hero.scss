@@ -8,13 +8,12 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   flex-grow: 1;
    height: 400px;
    background-image: $bg-gradient,
       url("../image/hero-mob-bg.jpg");
 
-   @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+   @include retina {
          background-image: $bg-gradient,
                url("../image/hero-mobile-bg-x2.jpg");
       }
@@ -23,9 +22,7 @@
       background-image: $bg-gradient,
             url("../image/hero-tab-bg.jpg");
             height: 400px;
-   @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+   @include retina {
          background-image: $bg-gradient,
             url("../image/hero-tab-bg-x2.jpg");
       }
@@ -35,6 +32,10 @@
       background-image: $bg-gradient,
          url("../image/background-img.jpg");
       height: 600px;
+      @include retina {
+         background-image: $bg-gradient,
+            url("../image/background-img-2x.jpg");
+      }
    }
 }
 
