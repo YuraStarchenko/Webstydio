@@ -352,11 +352,12 @@ body {
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  padding: 17px 0;
+  padding: 48px 83px 48px 40px;
 }
 .mob-menu > .container {
   height: 100%;
@@ -374,11 +375,33 @@ body {
 }
 
 .mob-menu__list {
-  margin-bottom: 306px;
+  margin-bottom: 50px;
 }
 
-.mob-menu__cont-list {
+.mob-connect {
   margin-bottom: 64px;
+}
+
+.mob-connect__tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-connect__link {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  padding-top: 32px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -397,6 +420,17 @@ body {
 
 .mob__soc-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mob__soc-line::before {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
+  height: 1px;
+  width: 22px;
+  margin-right: 10px;
 }
 
 .mob__soc-link {
