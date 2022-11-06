@@ -2,10 +2,10 @@
    position: fixed;
    top: 0;
    background-color: #ffffff;
-   width: 100%;
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
    z-index: 1;
-   padding: 48px 40px 83px;
+   padding: 48px 40px;
    > .container {
       height: 100%;
       display: flex;
@@ -16,10 +16,11 @@
 }
 
 .menu-close-btn {
+   position: absolute;
    background-color: transparent;
    border: none;
-   top: 0;
-   right: 0;
+   top: 21px;
+   right: 25px;
    display: block;
    margin-left: 0;
 }

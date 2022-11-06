@@ -1,5 +1,22 @@
 .header__list {
-   display: none;
+   display: flex;
+   @include tablet {
+         font-weight: 500;
+            font-size: 14px;
+            line-height: $leading-lh;
+            letter-spacing: 0.02em;
+            color: $primary-text-color;
+            transition-property: background-color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: $timing-function;
+         
+            &:hover,
+            &:focus {
+               color: $accent-text-color;
+            }
+   }
+
+
 }
 
 .header__list.list:first-child {
@@ -7,8 +24,12 @@
 }
 
 .header__item {
-   margin-right: 50px;
-
+   @include tablet {
+      gap: 50px;
+   }
+   @include desktop {
+      gap: 50px;
+   }
    &:last-child {
       margin-right: 0;
    }
@@ -35,6 +56,9 @@
 .header__menu-nav {
    display: none;
    align-items: center;
+   @include tablet {
+      display: flex;
+   }
 }
 
 .header__logo-text span {
@@ -91,6 +115,9 @@
    &:hover,
    &:focus {
       color: $accent-text-color;
+   }
+   &:not(:last-child){
+      margin-bottom: 10;
    }
 }
 
