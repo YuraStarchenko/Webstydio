@@ -27,7 +27,6 @@
    border-bottom: 1px solid #ececec;
 
    @include desktop {
-      padding: 24px 0 25px 0;
    }
 }
 
@@ -35,6 +34,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   @include desktop {}
 }
 
 .header__menu-nav {
@@ -73,7 +73,6 @@
 }
 
 .header__contact-list {
-   //margin-left: auto;
    @include tablet {
       display: flex;
       flex-direction: column;
@@ -87,13 +86,20 @@
       transition-duration: 250ms;
       transition-timing-function: $timing-function;
    }
+   @include desktop {
+      flex-direction: row;
+      font-size: 14px;
+      line-height: 1.14;
+      gap: 30px;
+   }
 }
+
 
 .header__contact-link {
    display: flex;
    align-items: center;
    color: $title-text-color;
-
+   gap: 10px;
    &:hover,
    &:focus {
       color: $accent-text-color;
@@ -101,12 +107,24 @@
    &:not(:last-child){
       margin-bottom: 10;
    }
-
-
 }
 
-.header__contact-logo {
+.header__contact-mail {
    fill: currentColor;
+   @include desktop {
+      fill: currentColor;
+      width: 16px;
+      height: 12px;
+   }
+}
+
+.header__contact-tel {
+   fill: currentColor;
+   @include desktop {
+      fill: currentColor;
+      width: 10px;
+      height: 16px;
+   }
 }
 
 .header__link.link.active {
@@ -134,8 +152,14 @@
       margin-left: auto;
       border: none;
       background-color: transparent;
+      cursor: pointer;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       @include tablet {
          display: none;
+      }
+      &:hover,
+      &:focus {
+         fill: $accent-active;
       }
    }
 
@@ -144,6 +168,7 @@
    border: none;
    display: block;
    margin-left: auto;
+   cursor: pointer;
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
    &:hover,

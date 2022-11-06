@@ -19,7 +19,7 @@
    position: absolute;
    background-color: transparent;
    border: none;
-   top: 17px;
+   top: 9px;
    right: 16px;
    display: block;
    margin-left: 0;
@@ -42,7 +42,12 @@
    font-size: 34px;
    line-height: 1.17;
    letter-spacing: 0.02em;
-   color: #2196F3;
+   color: $title-text-color;
+
+   &:hover,
+      &:focus {
+         color: $accent-text-color;
+      }
 }
 
 .mob-connect__link {
@@ -53,8 +58,13 @@
    font-size: 24px;
    line-height: 1.17;
    letter-spacing: 0.02em;
-   color: #757575;
+   color: $title-text-color;
    padding-top: 32px;
+
+   &:hover,
+      &:focus {
+         color: $accent-text-color;
+      }
 }
 
 .mob-menu__item:not(:last-child) {
@@ -69,6 +79,11 @@
    line-height: 1.17;
    letter-spacing: 0.02em;
    color: #212121;
+
+   &:hover,
+      &:focus {
+         color: $accent-text-color;
+      }
 }
 
 .mob__soc-list {
@@ -96,5 +111,9 @@
    line-height: 1.22;
 
    letter-spacing: 0.02em;
-   color: #2196F3;
+   color: $title-text-color;
+   &:hover,
+   &:focus {
+         color: $accent-text-color;
+      }
 }
