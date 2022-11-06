@@ -1,5 +1,5 @@
 .header__list {
-   display: flex;
+   display: none;
 
    @include tablet {
       margin-left: 90px;
@@ -24,12 +24,7 @@
 }
 
 .header {
-   //padding: 16px 0;
    border-bottom: 1px solid #ececec;
-
-   @include tablet {
-      //padding: 26px 0;
-   }
 
    @include desktop {
       padding: 24px 0 25px 0;
@@ -43,15 +38,11 @@
 }
 
 .header__menu-nav {
-   display: none;
+   display: flex;
    align-items: center;
    @include tablet {
       display: flex;
    }
-}
-
-.header__logo-text span {
-   color: $accent-text-color;
 }
 
 .header__contact-list {
@@ -128,7 +119,7 @@
 
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -1px;
 
       display: block;
       width: 100%;

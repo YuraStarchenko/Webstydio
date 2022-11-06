@@ -5,6 +5,9 @@
    line-height: 1.19;
    letter-spacing: 0.03em;
    color: $primary-text-color;
+   @include mobile {
+      padding: 16px 0;
+   }
 }
 
 .header__logo-text span {
