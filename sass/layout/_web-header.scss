@@ -1,22 +1,16 @@
 .header__list {
    display: flex;
+
    @include tablet {
-         font-weight: 500;
-            font-size: 14px;
-            line-height: $leading-lh;
-            letter-spacing: 0.02em;
-            color: $primary-text-color;
-            transition-property: background-color, fill;
-            transition-duration: 250ms;
-            transition-timing-function: $timing-function;
-         
-            &:hover,
-            &:focus {
-               color: $accent-text-color;
-            }
+      margin-left: 90px;
+      display: flex;
+      gap: 50px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: .02em;
+      color: #212121;
    }
-
-
 }
 
 .header__list.list:first-child {
@@ -24,12 +18,6 @@
 }
 
 .header__item {
-   @include tablet {
-      gap: 50px;
-   }
-   @include desktop {
-      gap: 50px;
-   }
    &:last-child {
       margin-right: 0;
    }
@@ -81,6 +69,7 @@
 .header__link {
    font-weight: 500;
    font-size: 14px;
+   padding: 32px 0;
    line-height: $leading-lh;
    letter-spacing: 0.02em;
    color: $primary-text-color;
@@ -104,7 +93,7 @@
    align-items: center;
    gap: 10px;
    font-weight: 500;
-   font-size: 14px;
+   font-size: 12px;
    line-height: $leading-lh;
    letter-spacing: 0.02em;
    color: $title-text-color;
@@ -119,6 +108,8 @@
    &:not(:last-child){
       margin-bottom: 10;
    }
+
+
 }
 
 .header__contact-logo {
