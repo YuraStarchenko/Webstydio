@@ -1,12 +1,11 @@
 .mob-menu {
    position: fixed;
    top: 0;
-   left: 0;
    background-color: #ffffff;
-   width: 100vw;
-   height: 100vh;
+   width: 100%;
+   height: 100%;
    z-index: 1;
-   padding: 48px 83px 48px 40px;
+   padding: 48px 40px 83px;
    > .container {
       height: 100%;
       display: flex;
@@ -21,6 +20,7 @@
    background-color: transparent;
    border: none;
    display: block;
+   margin-left: 0;
 }
 
 .mob-menu__nav {}
