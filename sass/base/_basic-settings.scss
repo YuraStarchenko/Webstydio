@@ -8,6 +8,12 @@ h6 {
    margin: 0;
 }
 
+a {
+   text-decoration: none;
+   cursor: pointer;
+   transition: color 250ms $timing-function;
+}
+
 img {
    display: block;
    max-width: 100%;
@@ -44,4 +50,10 @@ body {
 
 .no-scroll {
    overflow: hidden;
+}
+
+ul, ol {
+   margin: 0;
+   padding-left: 0;
+   list-style: none;
 }

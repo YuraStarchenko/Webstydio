@@ -24,11 +24,11 @@
 }
 
 .header {
-   padding: 16px 0;
+   //padding: 16px 0;
    border-bottom: 1px solid #ececec;
 
    @include tablet {
-      padding: 26px 0;
+      //padding: 26px 0;
    }
 
    @include desktop {
@@ -39,6 +39,7 @@
 .header>.container {
    display: flex;
    align-items: center;
+   justify-content: space-between;
 }
 
 .header__menu-nav {
@@ -51,10 +52,6 @@
 
 .header__logo-text span {
    color: $accent-text-color;
-}
-
-.navigation__contacts {
-   margin-left: auto;
 }
 
 .header__contact-list {
@@ -70,6 +67,7 @@
    font-weight: 500;
    font-size: 14px;
    padding: 32px 0;
+   display: block;
    line-height: $leading-lh;
    letter-spacing: 0.02em;
    color: $primary-text-color;
@@ -84,22 +82,26 @@
 }
 
 .header__contact-list {
-   margin-left: auto;
+   //margin-left: auto;
+   @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: $leading-lh;
+      letter-spacing: 0.02em;
+      color: $title-text-color;
+      transition-property: background-color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: $timing-function;
+   }
 }
 
 .header__contact-link {
    display: flex;
-   text-decoration: none;
    align-items: center;
-   gap: 10px;
-   font-weight: 500;
-   font-size: 12px;
-   line-height: $leading-lh;
-   letter-spacing: 0.02em;
    color: $title-text-color;
-   transition-property: background-color, fill;
-   transition-duration: 250ms;
-   transition-timing-function: $timing-function;
 
    &:hover,
    &:focus {
