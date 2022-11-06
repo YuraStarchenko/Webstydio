@@ -33,26 +33,25 @@
 }
 
 .header__menu-nav {
-   display: flex;
+   display: none;
    align-items: center;
 }
-
-//.header__logo-text {
-//   display: none;
-//   font-family: "Raleway", sans-serif;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   margin-right: 93px;
-//   color: $primary-text-color;
-//}
 
 .header__logo-text span {
    color: $accent-text-color;
 }
 
+.navigation__contacts {
+   margin-left: auto;
+}
+
 .header__contact-list {
    display: none;
+
+   @include tablet {
+      display: flex;
+      flex-direction: column;
+   }
 }
 
 .header__link {
@@ -76,7 +75,7 @@
 }
 
 .header__contact-link {
-   display: none;
+   display: flex;
    text-decoration: none;
    align-items: center;
    gap: 10px;
@@ -124,7 +123,6 @@
       margin-left: auto;
       border: none;
       background-color: transparent;
-
       @include tablet {
          display: none;
       }
@@ -134,15 +132,12 @@
    background-color: transparent;
    border: none;
    display: block;
+   margin-left: auto;
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
    &:hover,
    &:focus {
       fill: $accent-active;
-   }
-      
-   @include mobile {
-      margin-left: auto;
    }
 }
 
