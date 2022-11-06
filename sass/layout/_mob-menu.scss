@@ -1,0 +1,51 @@
+.mob-menu {
+   position: fixed;
+   top: 0;
+   background-color: #ffffff;
+   width: 100vw;
+   height: 100vh;
+   //padding: 48px 0;
+}
+
+.menu-close-btn {
+   margin-left: auto;
+   background-color: transparent;
+   border: none;
+   display: block;
+}
+
+.mob-menu__nav {}
+
+.mob-menu__cont-list {
+   margin-bottom: 64px;
+}
+
+.mob-menu__list {
+   margin-bottom: 306px;
+}
+
+.mob-menu__item:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+.mob-menu__link {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 1.17;
+   letter-spacing: 0.02em;
+   color: #212121;
+}
+
+.active {}
+
+.current {}
+
+.mob__soc-list {
+   display: flex;
+}
+
+.mob__soc-item {}
+
+.mob__soc-link {}

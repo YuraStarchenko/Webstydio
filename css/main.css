@@ -345,6 +345,51 @@ body {
   color: #2196f3;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-close-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  display: block;
+}
+
+.mob-menu__cont-list {
+  margin-bottom: 64px;
+}
+
+.mob-menu__list {
+  margin-bottom: 306px;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob__soc-list {
+  display: flex;
+}
+
+.header__list {
+  display: none;
+}
+
 .header__list.list:first-child {
   padding-right: 0;
 }
@@ -357,29 +402,36 @@ body {
 }
 
 .header {
-  padding: 24px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0 25px 0;
+  }
 }
 
 .header > .container {
+  display: flex;
   align-items: center;
 }
 
 .header__menu-nav {
+  display: flex;
   align-items: center;
-}
-
-.header__logo-text {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
-  color: #212121;
 }
 
 .header__logo-text span {
   color: #2196f3;
+}
+
+.header__contact-list {
+  display: none;
 }
 
 .header__link {
@@ -401,6 +453,7 @@ body {
 }
 
 .header__contact-link {
+  display: none;
   text-decoration: none;
   align-items: center;
   gap: 10px;
@@ -436,6 +489,10 @@ body {
   height: 4px;
   border-radius: 4px;
   background-color: #2196f3;
+}
+
+.menu-open-btn {
+  margin-left: auto;
 }
 
 .hero {
@@ -751,12 +808,17 @@ body {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+  }
 }
 
 .clients__item {
@@ -764,7 +826,7 @@ body {
 }
 @media screen and (min-width: 320px) {
   .clients__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 0px) / 1);
   }
 }
 @media screen and (min-width: 480px) {
@@ -788,6 +850,7 @@ body {
   display: flex;
   border-radius: 4px;
   height: 92px;
+  width: 290px;
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
