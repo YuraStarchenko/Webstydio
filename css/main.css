@@ -304,6 +304,10 @@ body {
   position: relative;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -351,6 +355,15 @@ body {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
+  padding: 17px 0;
+}
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-close-btn {
@@ -360,12 +373,12 @@ body {
   display: block;
 }
 
-.mob-menu__cont-list {
-  margin-bottom: 64px;
-}
-
 .mob-menu__list {
   margin-bottom: 306px;
+}
+
+.mob-menu__cont-list {
+  margin-bottom: 64px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -384,6 +397,16 @@ body {
 
 .mob__soc-list {
   display: flex;
+}
+
+.mob__soc-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .header__list {
@@ -493,6 +516,34 @@ body {
 
 .menu-open-btn {
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: #188ce8;
+}
+@media screen and (min-width: 480px) {
+  .menu-close-btn {
+    margin-left: auto;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .hero {
@@ -659,6 +710,11 @@ body {
 
 .skills {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    display: none;
+  }
 }
 
 .skills__list {

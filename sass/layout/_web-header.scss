@@ -119,6 +119,35 @@
    }
 }
 
+
 .menu-open-btn {
-   margin-left: auto;
+      margin-left: auto;
+      border: none;
+      background-color: transparent;
+
+      @include tablet {
+         display: none;
+      }
+   }
+
+.menu-close-btn {
+   background-color: transparent;
+   border: none;
+   display: block;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+   &:hover,
+   &:focus {
+      fill: $accent-active;
+   }
+      
+   @include mobile {
+      margin-left: auto;
+   }
+}
+
+.is-hidden {
+   opacity: 0;
+   pointer-events: none;
+   visibility: hidden;
 }

@@ -4,7 +4,15 @@
    background-color: #ffffff;
    width: 100vw;
    height: 100vh;
-   //padding: 48px 0;
+   z-index: 1;
+   padding: 17px 0;
+   > .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: auto;
+   }
 }
 
 .menu-close-btn {
@@ -16,12 +24,12 @@
 
 .mob-menu__nav {}
 
-.mob-menu__cont-list {
-   margin-bottom: 64px;
-}
-
 .mob-menu__list {
    margin-bottom: 306px;
+}
+
+.mob-menu__cont-list {
+   margin-bottom: 64px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -48,4 +56,13 @@
 
 .mob__soc-item {}
 
-.mob__soc-link {}
+.mob__soc-link {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.22;
+
+   letter-spacing: 0.02em;
+   color: #2196F3;
+}

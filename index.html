@@ -40,22 +40,23 @@
                   </svg>+38 096 111 11 11</a>
             </li>
          </ul>
-         <button class="menu-open-btn" type="button">
+         <button class="menu-open-btn" type="button" data-menu-open>
             <svg width="40" height="40">
                <use href="./image/icon/symbol-defs.svg#icon-open-btn"></use>
             </svg>
          </button>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
          <div class="container">
-            <button class="menu-close-btn" type="button">
+            <button class="menu-close-btn" type="button" data-menu-close>
                <svg width="40" height="40">
                   <use href="./image/icon/symbol-defs.svg#icon-close-btn"></use>
                </svg>
             </button>
             <nav class="mob-menu__nav">
                <ul class="mob-menu__list list">
-                  <li class="mob-menu__item"><a class="mob-menu__link link active current" href="./index.html">Студія</a>
+                  <li class="mob-menu__item"><a class="mob-menu__link link active current"
+                        href="./index.html">Студія</a>
                   </li>
                   <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a></li>
                   <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Контакти</a></li>
@@ -72,10 +73,13 @@
                </li>
             </ul>
             <ul class="mob__soc-list list">
-               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://www.instagram.com">instagram</a></li> | 
-               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://twitter.com">twitter</a></li> | 
-               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://www.facebook.com">facebook</a></li> | 
-               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://www.linkedin.com/">linkedin</a></li>
+               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://www.instagram.com">instagram</a>
+               </li> |
+               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://twitter.com">twitter</a></li> |
+               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://www.facebook.com">facebook</a></li>
+               |
+               <li class="mob__soc-item"><a class="mob__soc-link link" href="https://www.linkedin.com/">linkedin</a>
+               </li>
             </ul>
          </div>
       </div>
@@ -143,7 +147,7 @@
          </div>
       </section>
       <!-- Чим ми займаємося БЕМ -->
-      <!--<section class="skills">
+      <section class="skills">
          <div class="container">
             <div class="skills__content">
                <h2 class="skills__title">Чим ми займаємося</h2>
@@ -169,7 +173,7 @@
                </ul>
             </div>
          </div>
-      </section>-->
+      </section>
       <!-- Наша команда БЕМ -->
       <section class="team">
          <div class="container">
@@ -542,6 +546,7 @@
       </div>
    </div>-->
    <script src="./js/modal.js"></script>
+   <script src="./js/menu.js"></script>
 </body>
 
 </html>
