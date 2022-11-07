@@ -1336,11 +1336,16 @@ ul, ol {
   left: 50%;
   border-radius: 4px;
   width: 450px;
-  height: 609px;
   padding: 40px;
   background-color: #fff;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 300ms linear;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1384,6 +1389,12 @@ textarea {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .form-title {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 }
 
 .form-field {
@@ -1476,9 +1487,15 @@ textarea {
   display: flex;
   align-items: center;
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .label-check {
+    font-size: 14px;
+    justify-content: center;
+  }
 }
 
 .input-checkbox {
@@ -1489,6 +1506,11 @@ textarea {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .input-checkbox {
+    position: absolute;
+  }
 }
 
 .icon-checkbox {
@@ -1510,6 +1532,11 @@ textarea {
   margin-left: 5px;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+  }
 }
 
 .input-checkbox:checked + .icon-checkbox {
