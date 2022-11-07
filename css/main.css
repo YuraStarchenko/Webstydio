@@ -1332,7 +1332,7 @@ ul, ol {
 }
 
 .footer__email-title {
-  display: flex;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1340,9 +1340,15 @@ ul, ol {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .footer__email-title {
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__email-title {
     text-align: left;
+    display: flex;
   }
 }
 

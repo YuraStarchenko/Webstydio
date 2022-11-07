@@ -180,7 +180,7 @@
 }
 
 .footer__email-title {
-   display: flex;
+   display: block;
    font-weight: 700;
    font-size: 14px;
    line-height: $leading-lh;
@@ -188,8 +188,13 @@
    text-transform: uppercase;
    color: $main-color;
 
+@include tablet {
+   display: block;
+}
+
    @include desktop {
       text-align: left;
+      display: flex;
    }
 }
 
