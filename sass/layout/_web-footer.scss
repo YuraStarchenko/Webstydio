@@ -3,6 +3,10 @@
    margin-left: 0;
    margin-right: 0;
    padding: 60px 15px;
+   
+   @include tablet {
+      padding: 60px 90px;
+   }
 }
 
 .footer__block {
@@ -13,6 +17,11 @@
 
 .footer__top {
    display: block;
+   @include tablet {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+   }
 }
 
 .footer__logo {
@@ -21,7 +30,7 @@
    text-decoration: none;
    color: $main-color;
    display: inline-block;
-   padding-bottom: 20px;
+   //padding-bottom: 20px;
 }
 
 .footer__logo span {
@@ -29,6 +38,17 @@
 }
 
 /* ========== ADDRESS ========== */
+
+.footer__contact {
+   display: block;
+}
+
+.footer__address {
+   margin-top: 20px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+}
 
 .footer__address-link {
    display: block;
@@ -72,6 +92,11 @@
    //margin-left: 70px;
    display: block;
    margin: 60px 0;
+
+   @include tablet {
+      margin: 0;
+      margin-top: 8px;
+   }
 }
 
 .footer__subscribe-title {
@@ -87,10 +112,13 @@
 
 .footer__subscribe-list {
    display: flex;
-   height: 100%;
    gap: 10px;
    justify-content: center;
    align-items: center;
+
+   @include desktop {
+      height: 100%;
+   }
 }
 
 .footer__subscribe-link {
