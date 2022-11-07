@@ -1164,11 +1164,27 @@ ul, ol {
     padding: 60px 90px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+  }
+}
 
 .footer__block {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
 }
 
 .footer__top {
@@ -1179,6 +1195,11 @@ ul, ol {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__top {
+    margin-bottom: 0;
   }
 }
 
@@ -1197,6 +1218,11 @@ ul, ol {
 /* ========== ADDRESS ========== */
 .footer__contact {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    text-align: left;
+  }
 }
 
 .footer__address {
@@ -1249,6 +1275,11 @@ ul, ol {
     margin-top: 8px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: 70px;
+  }
+}
 
 .footer__subscribe-title {
   display: block;
@@ -1260,17 +1291,17 @@ ul, ol {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-title {
+    text-align: left;
+  }
+}
 
 .footer__subscribe-list {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .footer__subscribe-list {
-    height: 100%;
-  }
 }
 
 .footer__subscribe-link {
@@ -1301,6 +1332,7 @@ ul, ol {
 }
 
 .footer__email-title {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1308,11 +1340,22 @@ ul, ol {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .footer__email-title {
+    text-align: left;
+  }
+}
 
 .footer__btn-icon {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__btn-icon {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .footer__email-input {
@@ -1332,6 +1375,11 @@ ul, ol {
 .footer__email-input:hover, .footer__email-input:focus {
   border: 1px solid #2196f3;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer__email-input {
+    width: 358px;
+  }
 }
 
 .footer__send-btn {
