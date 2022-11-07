@@ -37,11 +37,6 @@ body {
    font-style: normal;
 }
 
-.flex__block {
-   display: flex;
-   align-items: baseline;
-}
-
 .active {
    color: $accent-text-color;
    position: relative;

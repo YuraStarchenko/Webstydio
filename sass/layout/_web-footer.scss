@@ -1,7 +1,18 @@
 .footer {
    background-color: #2f303a;
-   padding-top: 60px;
-   padding-bottom: 60px;
+   margin-left: 0;
+   margin-right: 0;
+   padding: 60px 15px;
+}
+
+.footer__block {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.footer__top {
+   display: block;
 }
 
 .footer__logo {
@@ -58,7 +69,9 @@
 /* ========== SUBSCRIBE ========== */
 
 .footer__subscribe {
-   margin-left: 70px;
+   //margin-left: 70px;
+   display: block;
+   margin: 60px 0;
 }
 
 .footer__subscribe-title {
@@ -107,14 +120,13 @@
 /* ========== FOOTER EMAIL ========== */
 
 .footer__email {
-   margin-left: 93px;
-   display: flex;
+   //margin-left: 93px;
+   //display: flex;
    flex-wrap: wrap;
 }
 
 .footer__email-title {
-   display: flex;
-   margin-bottom: 20px;
+   //display: flex;
    font-weight: 700;
    font-size: 14px;
    line-height: $leading-lh;
@@ -125,18 +137,25 @@
 
 .footer__btn-icon {
    display: flex;
-   gap: 12px;
+   align-items: center;
+   flex-direction: column;
+   //gap: 12px;
 }
 
 .footer__email-input {
    padding: 15px 16px;
-   width: 358px;
+   //width: 358px;
+   width: 450px;
+   margin: 20px 0;
    background-color: inherit;
    outline: transparent;
    border-radius: 4px;
    border: 1px solid rgba(255, 255, 255, 0.3);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    color: $main-color;
+   transition-property: background-color, fill;
+   transition-duration: 250ms;
+   transition-timing-function: $timing-function;
 }
 
 .footer__send-btn {
@@ -168,4 +187,13 @@
 
 .footer__icon-btn {
    fill: $main-color;
+}
+
+.flex__block {
+   //display: flex;
+   align-items: baseline;
+
+   @include desktop {
+      display: flex;
+   }
 }
