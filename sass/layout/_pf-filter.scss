@@ -1,12 +1,17 @@
-.section__button-filter {
-   margin-bottom: 50px;
-}
+
+
 
 .section__buttons-list {
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   //justify-content: center;
    gap: 8px;
+   margin-bottom: 40px;
+
+   @include tablet {
+      margin-bottom: 40px;
+      justify-content: flex-start;
+   }
 }
 
 .section__buttons-item:active {
@@ -18,12 +23,12 @@
    font-weight: 500;
    font-size: 16px;
    line-height: 1.62;
-   text-align: center;
+   //text-align: center;
    letter-spacing: 0.03em;
    background-color: #f5f4fa;
    border-style: none;
    padding: 6px 25px;
-   height: 38px;
+   //height: 38px;
    border-radius: 4px;
    cursor: pointer;
    transition-property: background-color, fill;
