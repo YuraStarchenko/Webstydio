@@ -1297,6 +1297,10 @@ ul, ol {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer__email-input:hover, .footer__email-input:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
 
 .footer__send-btn {
   gap: 10px;
@@ -1314,9 +1318,6 @@ ul, ol {
   background-color: #2196f3;
   border-radius: 4px;
   color: #ffffff;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .footer__send-btn:hover {

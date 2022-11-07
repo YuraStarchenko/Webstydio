@@ -156,6 +156,12 @@
    transition-property: background-color, fill;
    transition-duration: 250ms;
    transition-timing-function: $timing-function;
+
+   &:hover,
+   &:focus {
+      border: 1px solid #2196f3;
+      outline: none;
+   }
 }
 
 .footer__send-btn {
@@ -174,9 +180,6 @@
    background-color: $accent-text-color;
    border-radius: 4px;
    color: #ffffff;
-   transition-property: background-color, fill;
-   transition-duration: 250ms;
-   transition-timing-function: $timing-function;
    cursor: pointer;
 
    &:hover {
