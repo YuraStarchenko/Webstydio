@@ -1,5 +1,7 @@
 .skills {
-   padding-bottom: 94px;
+   @include desktop {
+      padding-bottom: 94px;
+   }
 }
 
 .skills__content {

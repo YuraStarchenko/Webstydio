@@ -45,6 +45,10 @@
    text-transform: uppercase;
    color: #212121;
    margin-bottom: 10px;
+
+   @include mobile {
+      text-align: center;
+   }
 }
 
 .about__text {
@@ -52,5 +56,8 @@
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: $title-text-color;
-   margin-bottom: 30px;
+
+   @include tablet {
+      margin-bottom: 30px;
+   }
 }

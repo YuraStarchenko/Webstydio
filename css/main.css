@@ -436,7 +436,7 @@ ul, ol {
   font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #188ce8;
 }
 .mob-connect__tel:hover, .mob-connect__tel:focus {
   color: #2196f3;
@@ -511,7 +511,7 @@ ul, ol {
   font-size: 15px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #188ce8;
 }
 .mob__soc-link:hover, .mob__soc-link:focus {
   color: #2196f3;
@@ -853,17 +853,28 @@ ul, ol {
   color: #212121;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 480px) {
+  .about__title {
+    text-align: center;
+  }
+}
 
 .about__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    margin-bottom: 30px;
+  }
 }
 
-.skills {
-  padding-bottom: 94px;
+@media screen and (min-width: 1199px) {
+  .skills {
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1030,10 +1041,11 @@ ul, ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1199px) {
   .clients__title {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
