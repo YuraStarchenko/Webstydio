@@ -13,11 +13,16 @@
    top: 50%;
    left: 50%;
    border-radius: 4px;
-   width: 450px;
-   padding: 40px;
+   width: 330px;
+   padding: 35px 25px;
    background-color: #fff;
    transform: translate(-50%, -50%) scaleY(1);
    transition: transform 300ms linear;
+
+   @include mobile {
+      padding: 40px;
+      width: 450px;
+   }
 
    @include desktop {
       width: 528px;
@@ -62,12 +67,16 @@ textarea {
 
 .form-title {
    font-weight: 700;
-   font-size: 20px;
+   font-size: 18px;
    line-height: 1.15;
    text-align: center;
    letter-spacing: 0.03em;
    color: #212121;
    margin-bottom: 24px;
+
+   @include mobile {
+      font-size: 20px;
+   }
 
    @include desktop {
       margin-bottom: 30px;
@@ -98,7 +107,7 @@ textarea {
 
 .form-input {
    width: 100%;
-   padding: 11px;
+   padding: 8px;
    padding-left: 42px;
    font: inherit;
    outline: transparent;
@@ -107,6 +116,10 @@ textarea {
    transition-property: background-color, fill;
    transition-duration: 250ms;
    transition-timing-function: $timing-function;
+
+   @include mobile {
+      padding: 11px;
+   }
 }
 
 .form-input:focus,
@@ -144,7 +157,7 @@ textarea {
 .form-area {
    width: 100%;
    padding: 12px 16px;
-   height: 120px;
+   height: 90px;
    outline: transparent;
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
@@ -155,19 +168,30 @@ textarea {
    &::placeholder {
          color: rgba(117, 117, 117, 0.5);
       }
+
+      @include mobile {
+         height: 120px;
+      }
 }
 
 .form-checkbox {
-   padding-top: 20px;
+   padding-top: 10px;
+   @include mobile {
+      padding-top: 20px;
+   }
 }
 
 .label-check {
    display: flex;
    align-items: center;
-   font-size: 12px;
+   font-size: 8px;
    line-height: 1.17;
    letter-spacing: 0.03em;
    color: $title-text-color;
+
+   @include mobile {
+      font-size: 12px
+   }
 
    @include desktop {
       font-size: 14px;
@@ -178,11 +202,15 @@ textarea {
 .input-checkbox {
    width: 1px;
    height: 1px;
-   margin: -1px;
+   margin: 4px;
    border: 0;
    padding: 0;
    clip: rect(0 0 0 0);
    overflow: hidden;
+
+   @include mobile {
+      margin: -1px;
+   }
 
    @include desktop {
       position: absolute;
@@ -192,8 +220,8 @@ textarea {
 .icon-checkbox {
    display: inline-block;
    margin-right: 7px;
-   width: 16px;
-   height: 15px;
+   width: 14px;
+   height: 13px;
    border-radius: 2px;
    border: 2px solid #212121;
    transition-property: background-color, fill;
@@ -203,11 +231,15 @@ textarea {
 }
 
 .policy {
-   font-size: 12px;
+   font-size: 9px;
    line-height: 1.17;
    margin-left: 5px;
    letter-spacing: 0.03em;
    color: $accent-text-color;
+
+   @include mobile { 
+      font-size: 12px;
+   }
 
    @include desktop {
       font-size: 14px;
@@ -226,17 +258,17 @@ textarea {
    display: block;
    align-items: center;
    justify-content: center;
-   min-width: 200px;
-   height: 50px;
+   min-width: 170px;
+   height: 40px;
    font-weight: 700;
-   font-size: 16px;
+   font-size: 14px;
    line-height: 1.88;
    letter-spacing: 0.06em;
    color: #ffffff;
    background-color: $accent-text-color;
    border: none;
    border-radius: 4px;
-   margin: 30px auto 0;
+   margin: 20px auto 0;
    transition-property: background-color, fill;
    transition-duration: 250ms;
    transition-timing-function: $timing-function;
@@ -246,4 +278,11 @@ textarea {
          background-color: $accent-active;
          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       }
+
+   @include mobile {
+      min-width: 200px;
+      height: 50px;
+      font-size: 16px;
+      margin: 30px auto 0;
+   }
 }

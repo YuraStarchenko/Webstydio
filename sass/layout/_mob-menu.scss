@@ -5,13 +5,21 @@
    width: 100vw;
    height: 100vh;
    z-index: 1;
-   padding: 48px 40px;
+   padding: 40px 10px;
    > .container {
-      height: 100%;
+      height: 90%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       overflow: auto;
+
+      @include mobile {
+         height: 100%;
+      }
+   }
+
+   @include mobile {
+      padding: 48px 40px;
    }
 }
 
@@ -19,34 +27,45 @@
    position: absolute;
    background-color: transparent;
    border: none;
-   top: 9px;
+   top: 1px;
    right: 16px;
    display: block;
    margin-left: 0;
+
+   @include mobile {
+      top: 9px;
+      right: 16px;
+   }
 }
 
-.mob-menu__nav {}
+//.mob-menu__nav {}
 
 .mob-menu__list {
    margin-bottom: 50px;
 }
 
 .mob-connect {
-   margin-bottom: 64px;
+   margin-bottom: 50px;
+   @include mobile {
+      margin-bottom: 64px;
+   }
 }
 
 .mob-connect__tel {
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
-   font-size: 34px;
+   font-size: 30px;
    line-height: 1.17;
    letter-spacing: 0.02em;
    color: $title-text-color;
 
    &:hover,
-      &:focus {
+   &:focus {
          color: $accent-text-color;
+      }
+      @include mobile {
+         font-size: 34px;
       }
 }
 
@@ -68,22 +87,31 @@
 }
 
 .mob-menu__item:not(:last-child) {
-   margin-bottom: 32px;
+   margin-bottom: 25px;
+
+   @include mobile {
+      margin-bottom: 32px;
+   }
 }
 
 .mob-menu__link {
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
-   font-size: 40px;
+   font-size: 30px;
    line-height: 1.17;
    letter-spacing: 0.02em;
    color: #212121;
 
    &:hover,
-      &:focus {
+   &:focus,
+   &:active {
          color: $accent-text-color;
       }
+   
+   @include mobile {
+      font-size: 40px;
+   }
 }
 
 .mob__soc-list {
@@ -101,13 +129,13 @@
    margin-right: 10px;
 }
 
-.mob__soc-item {}
+//.mob__soc-item {}
 
 .mob__soc-link {
    font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
-   font-size: 18px;
+   font-size: 15px;
    line-height: 1.22;
 
    letter-spacing: 0.02em;
@@ -116,4 +144,7 @@
    &:focus {
          color: $accent-text-color;
       }
+   @include mobile {
+      font-size: 18px;
+   }
 }
