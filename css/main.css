@@ -349,7 +349,7 @@ ul, ol {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .container {
     width: 1200px;
   }
@@ -605,7 +605,7 @@ ul, ol {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .header__contact-list {
     flex-direction: row;
     font-size: 14px;
@@ -630,7 +630,7 @@ ul, ol {
 .header__contact-mail {
   fill: currentColor;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .header__contact-mail {
     fill: currentColor;
     width: 16px;
@@ -641,7 +641,7 @@ ul, ol {
 .header__contact-tel {
   fill: currentColor;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .header__contact-tel {
     fill: currentColor;
     width: 10px;
@@ -730,13 +730,13 @@ ul, ol {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tab-bg-x2.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background-img.jpg");
     height: 600px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/background-img-2x.jpg");
   }
@@ -760,7 +760,7 @@ ul, ol {
     font-size: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .hero__title {
     width: 696px;
     font-size: 44px;
@@ -797,7 +797,7 @@ ul, ol {
     height: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .hero__btn {
     font-size: 16px;
     width: 216px;
@@ -807,7 +807,7 @@ ul, ol {
 .about {
   padding: 60px 0 60px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .about {
     padding: 94px 0 94px 0;
   }
@@ -827,7 +827,7 @@ ul, ol {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .about__item {
     width: calc((100% - 90px) / 4);
   }
@@ -865,8 +865,9 @@ ul, ol {
 .skills {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 768px) {
-  .skills {
+
+@media screen and (max-width: 1199px) {
+  .skills__content {
     display: none;
   }
 }
@@ -913,7 +914,7 @@ ul, ol {
   background-color: #f5f4fa;
   padding: 60px 0 60px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .team {
     padding: 94px 0 94px 0;
   }
@@ -937,7 +938,7 @@ ul, ol {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .team__item {
     width: calc((100% - 90px) / 4);
   }
@@ -1004,7 +1005,7 @@ ul, ol {
 .clients {
   padding: 60px 0 60px 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .clients {
     padding: 94px 0 94px 0;
   }
@@ -1025,7 +1026,7 @@ ul, ol {
   color: #212121;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .clients__title {
     font-size: 36px;
   }
@@ -1049,7 +1050,7 @@ ul, ol {
     width: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .clients__item {
     width: calc((100% - 150px) / 6);
   }
@@ -1083,7 +1084,7 @@ ul, ol {
     width: 226px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .clients__link {
     width: 170px;
   }
@@ -1107,7 +1108,7 @@ ul, ol {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .section__buttons-list {
     margin-bottom: 50px;
   }
@@ -1159,7 +1160,7 @@ ul, ol {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1174,7 +1175,7 @@ ul, ol {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .section__products-list {
     display: flex;
     flex-wrap: wrap;
@@ -1190,7 +1191,7 @@ ul, ol {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .section__products-list > .section__products-item {
     width: calc((100% - 60px) / 3);
   }
@@ -1264,7 +1265,7 @@ ul, ol {
     padding: 60px 90px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer {
     width: 100vw;
     margin-left: auto;
@@ -1278,12 +1279,11 @@ ul, ol {
   flex-direction: column;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__block {
     flex-direction: row;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 0 15px;
   }
 }
 
@@ -1297,7 +1297,7 @@ ul, ol {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__top {
     margin-bottom: 0;
   }
@@ -1319,7 +1319,7 @@ ul, ol {
 .footer__contact {
   display: block;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__contact {
     text-align: left;
   }
@@ -1375,7 +1375,7 @@ ul, ol {
     margin-top: 8px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__subscribe {
     margin-left: 70px;
   }
@@ -1391,7 +1391,7 @@ ul, ol {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__subscribe-title {
     text-align: left;
   }
@@ -1445,7 +1445,7 @@ ul, ol {
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__email-title {
     text-align: left;
     display: flex;
@@ -1457,7 +1457,7 @@ ul, ol {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__btn-icon {
     flex-direction: row;
     gap: 12px;
@@ -1487,7 +1487,7 @@ ul, ol {
     width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer__email-input {
     width: 358px;
   }
@@ -1523,7 +1523,7 @@ ul, ol {
 .flex__block {
   align-items: baseline;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .flex__block {
     display: flex;
   }
@@ -1556,7 +1556,7 @@ ul, ol {
     width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .modal {
     width: 528px;
     min-height: 581px;
@@ -1610,7 +1610,7 @@ textarea {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .form-title {
     margin-bottom: 30px;
     justify-content: center;
@@ -1731,7 +1731,7 @@ textarea {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .label-check {
     font-size: 14px;
     justify-content: center;
@@ -1752,7 +1752,7 @@ textarea {
     margin: -1px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .input-checkbox {
     position: absolute;
   }
@@ -1783,7 +1783,7 @@ textarea {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .policy {
     font-size: 14px;
   }
