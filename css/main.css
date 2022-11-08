@@ -950,12 +950,18 @@ ul, ol {
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1199px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team__name {
@@ -1262,7 +1268,9 @@ ul, ol {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 60px 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1199px) {

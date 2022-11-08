@@ -4,8 +4,10 @@
    margin-right: 0;
    padding: 60px 15px;
    
-   @include tablet {
-      padding: 60px 90px;
+@include tablet {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
    }
 
    @include desktop {
@@ -30,6 +32,7 @@
 
 .footer__top {
    display: block;
+
    @include tablet {
       display: flex;
       justify-content: space-between;
