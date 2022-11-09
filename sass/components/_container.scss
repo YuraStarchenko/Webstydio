@@ -4,9 +4,9 @@
    padding-right: 15px;
    margin: 0 auto;
 
-   @include min-mobile {
-      width: 360px;
-   }
+   //@include min-mobile {
+   //   width: 320px;
+   //}
    @include mobile {
       width: 480px;
    }

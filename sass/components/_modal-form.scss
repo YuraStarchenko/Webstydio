@@ -13,8 +13,8 @@
    top: 50%;
    left: 50%;
    border-radius: 4px;
-   width: 330px;
-   padding: 35px 25px;
+   width: 300px;
+   padding: 35px 20px;
    background-color: #fff;
    transform: translate(-50%, -50%) scaleY(1);
    transition: transform 300ms linear;
@@ -184,7 +184,7 @@ textarea {
 .label-check {
    display: flex;
    align-items: center;
-   font-size: 8px;
+   font-size: 7px;
    line-height: 1.17;
    letter-spacing: 0.03em;
    color: $title-text-color;

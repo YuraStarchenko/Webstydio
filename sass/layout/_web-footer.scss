@@ -4,7 +4,7 @@
    margin-right: 0;
    padding: 60px 15px;
    
-@include tablet {
+   @include tablet {
       display: flex;
       justify-content: space-around;
       align-items: baseline;
@@ -35,7 +35,7 @@
 
    @include tablet {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin-bottom: 60px;
    }
 
@@ -213,7 +213,7 @@
 
 .footer__email-input {
    padding: 15px 16px;
-   width: 320px;
+   width: 290px;
    margin: 20px 0;
    background-color: inherit;
    outline: transparent;

@@ -38,6 +38,7 @@
 
 .about__title {
    font-style: normal;
+   text-align: center;
    font-weight: 700;
    font-size: 14px;
    line-height: $leading-lh;
@@ -46,8 +47,8 @@
    color: #212121;
    margin-bottom: 10px;
 
-   @include mobile {
-      text-align: center;
+   @include tablet {
+      text-align: left;
    }
 }
 
@@ -56,8 +57,4 @@
    line-height: 1.71;
    letter-spacing: 0.03em;
    color: $title-text-color;
-
-   @include tablet {
-      margin-bottom: 30px;
-   }
 }
